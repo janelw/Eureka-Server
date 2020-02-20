@@ -2,8 +2,6 @@ language: java
 jdk: 
     - openjdk12
 
-script: 
-    - ./discovery-server/mvnw clean install
 after_success:
     - mvn coveralls:report
 
