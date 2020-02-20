@@ -4,6 +4,7 @@ jdk:
 install: true
 script: 
     - ./mvnw clean install
-    - bash <(curl -s https://codecov.io/bash)
 after_success:
     - mvn coveralls:report
+
+
