@@ -9,7 +9,8 @@ install:
     - "./mvnwm--show-version --errors --batch-mode test-compile depdency:go-offline"
 script: 
     - "./mvnw --show-version --errors --batch-mode -Prun-its clean verify"
-    -./mvnw clean install 
+    - ./mvnw clean install 
+    - mvn test
 after_success:
     - mvn coveralls:report
 
