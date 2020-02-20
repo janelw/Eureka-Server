@@ -13,5 +13,6 @@ public class DiscoveryServerApplication {
 		SpringApplication.run(DiscoveryServerApplication.class, args);
 	}
 //more comments
+//changes
 //more comments
 }

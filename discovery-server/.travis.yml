@@ -3,8 +3,9 @@ sudo: false
 install: true
 jdk: 
     - openjdk12
-script: -mvn -f pom.xml clean -Pjacoco coveralls:report
-
+script: 
+    -mvn install
+    -mvn test
 after_success:
     - mvn coveralls:report
 
