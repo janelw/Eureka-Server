@@ -1,7 +1,9 @@
 language: java 
 jdk: 
     - openjdk12
-
+script:
+    - mvn install
+    - mvn test
 after_success:
     - mvn coveralls:report
 
