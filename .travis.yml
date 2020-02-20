@@ -3,9 +3,8 @@ sudo: false
 install: true
 jdk: 
     - openjdk12
-script: 
+script:
     -mvn install
-    -mvn test
 after_success:
     - mvn coveralls:report
 
