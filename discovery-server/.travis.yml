@@ -1,0 +1,10 @@
+language: java 
+jdk: 
+    - openjdk12
+install: true
+script: 
+    - ./mvnw clean install
+after_success:
+    - mvn coveralls:report
+
+
