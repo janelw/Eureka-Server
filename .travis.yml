@@ -1,10 +1,10 @@
 language: java 
-sudo: false
+sudo: true
 install: true
 jdk: 
     - openjdk12
-install:
-    -mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+before_install:
+    -chmod +x mvnw
 after_success:
     - mvn coveralls:report
 
