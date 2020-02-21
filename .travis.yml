@@ -7,7 +7,6 @@ before_install:
     - mvn compile
 install:
     - "mvn -N io.takari:maven:wrapper"
-    - "./mvnwm--show-version --errors --batch-mode test-compile depdency:go-offline"
 script: 
     - mvn verify
 after_success:
