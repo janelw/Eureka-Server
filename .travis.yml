@@ -4,6 +4,7 @@ jdk:
 before_install:
     - mvn validate 
     - mvn clean install 
+    - mvn compile
 install:
     - "mvn -N io.takari:maven:wrapper -Dmaven = 3.6.3
     - "./mvnwm--show-version --errors --batch-mode test-compile depdency:go-offline"
