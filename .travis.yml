@@ -2,8 +2,11 @@ language: java
 
 jdk: 
     - openjdk12
+before_install:
+    - mvn validate -e 
+    - mvn clean install -e
 env:
-    -MAVEN_VERSION=3.6.3
+    - MAVEN_VERSION=3.6.3
 install:
     - "mvn -N io.takari:maven:wrapper -Dmaven =${MAVEN_VERSION}"
     - "./mvnwm--show-version --errors --batch-mode test-compile depdency:go-offline"
