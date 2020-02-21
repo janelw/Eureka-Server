@@ -2,8 +2,8 @@ language: java
 jdk: 
     - openjdk12
 before_install:
-    - mvn validate -e 
-    - mvn clean install -e
+    - mvn validate 
+    - mvn clean install 
 install:
     - "mvn -N io.takari:maven:wrapper -Dmaven = 3.6.3
     - "./mvnwm--show-version --errors --batch-mode test-compile depdency:go-offline"
@@ -12,5 +12,5 @@ script:
 after_success:
     - mvn coveralls:report
 
-    
+
 
