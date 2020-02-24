@@ -12,7 +12,5 @@ public class DiscoveryServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DiscoveryServerApplication.class, args);
 	}
-//more comments
-//changes
-//more comments
+//here are some new comments to test ci 
 }

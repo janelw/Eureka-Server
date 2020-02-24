@@ -1,5 +1,4 @@
 language: java 
-
 jdk: 
     - openjdk12
 before_install:
@@ -11,4 +10,3 @@ script:
     - mvn verify
 after_success:
     - mvn coveralls:report
-
